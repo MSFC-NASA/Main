@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<!--
+<script type="text/javascript">
+    window.onload = startInterval;
+    
+    function startInterval()
+    {
+        setInterval("startTime();",1000);
+    }
+    
+    function startTime()
+    {
+        document.getElementById('time').innerHTML = Date();  
+    }
+  </script>
+-->
+
+<meta http-equiv="refresh" content="1; url=display_bar_graph.html" />
+-->
+<title> Sensor Data Visualization </title>
+
+</head>
+
+<body>
+
+<h1 style="color:orange;"> <center> Sensor Data Visualization </center> </h1>
+<h2> <a href="display_line_graph.html"> View the line graph </a> </h2>
+
+<div class="row">
+  
+  <div id="time"  class="column">
+    <h2>Sensor 1 </h2>
+    <img src="foo1bar.png" alt="Sensor 1 data" style="width:328px;height:328px;">
+  </div>
+
+  <div class="column">
+    <h2>Sensor 2 </h2>
+    <img src="foo2bar.png" alt="Sensor 2 data" style="width:328px;height:328px;">
+  </div>
+
+  <div class="column">
+    <h2>Sensor 3 </h2>
+    <img src="foo3bar.png" alt="Sensor 3 data" style="width:328px;height:328px">
+  </div>
+
+ </div>
+
+ 
+<div class="row">
+  
+  <div class="column">
+    <h2>Sensor 4 </h2>
+    <img src="foo4bar.png" alt="Sensor 4 data" style="width:328px;height:328px">
+  </div>
+
+  <div class="column">
+    <h2>Sensor 5 </h2>
+    <img src="foo5bar.png" alt="Sensor 5 data" style="width:328px;height:328px">
+  </div>
+
+</div>
+
+<h2>
+<a href="display_line_graph.html"> View the line graph </a>
+</h2>
+</body>
+</html>

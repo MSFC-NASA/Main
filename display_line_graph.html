@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+<meta http-equiv="refresh" content="1;url=display_line_graph.html" />
+<title>Sensor Data Visualization</title>
+</head>
+
+<body>
+<h1 style="color:Tomato;"> <center> Sensor Data Visualization </center> </h1>
+
+<h2>
+<a href="display_bar_graph.html"> View the bar graph </a>
+</h2>
+
+<div class="row">
+
+  <div class="column">
+    <h3> Sensor 1 </h3>
+    <img src="foo1.png" alt="Sensor 1 data" style="width:328px;height:328px;">
+  </div>
+ 
+  <div class="column">
+    <h3>Sensor 2 </h3>
+    <img src="foo2.png" alt="Sensor 2 data" style="width:328px;height:328px; ">
+  </div>
+
+  <div class="column">
+    <h3>Sensor 3 </h3>
+    <img src="foo3.png" alt="Sensor 3 data" style="width:328px;height:328px;">
+  </div>
+
+ </div>
+
+ <div class="row">
+
+ <div class="column">
+    <h3>Sensor 4 </h3>
+    <img src="foo4.png" alt="Sensor 4 data" style="width:328px;height:328px;">
+  </div>
+
+  <div class="column">
+    <h3>Sensor 5 </h3>
+    <img src="foo5.png" alt="Sensor 5 data" style="width:328px;height:328px;">
+  </div>
+
+</div>
+
+<h2> 
+<a href="display_bar_graph.html"> View the bar graph </a>
+</h2>
+
+</body>
+</html>
