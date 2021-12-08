@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-<style>
-* {
-  box-sizing: border-box;
-}
+    body { 
+      font-family: 'Ubuntu', sans-serif;
+    }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 2px;
+    }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
-<!--
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .leaderboard-row {
+      background-color: #FFFFFF;
+      width: 400px;
+      height: 400px;
+      margin: 7em auto;
+      border-radius: 1.5em;
+      box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+      text-align: center;
+    }
+    .leaderboard-row h3{
+      margin-bottom: 0px !important;
+    }
+  </style>
+  <!--
 <script type="text/javascript">
     window.onload = startInterval;
     
@@ -36,53 +55,66 @@
   </script>
 -->
 
-<meta http-equiv="refresh" content="1; url=display_bar_graph.html" />
--->
-<title> Sensor Data Visualization </title>
+  <meta http-equiv="refresh" content="1; url=display_bar_graph.html" />
+
+  <title> Sensor Data Visualization </title>
 
 </head>
 
 <body>
 
-<h1 style="color:orange;"> <center> Sensor Data Visualization </center> </h1>
-<h2> <a href="display_line_graph.html"> View the line graph </a> </h2>
+  <h1 style="color:orange;">
+    <center> Sensor Data Visualization </center>
+  </h1>
+  <h2> <a href="display_line_graph.html"> View the line graph </a> </h2>
 
-<div class="row">
-  
-  <div id="time"  class="column">
-    <h2>Sensor 1 </h2>
-    <img src="foo1bar.png" alt="Sensor 1 data" style="width:328px;height:328px;">
+  <div class="row">
+
+    <div id="time" class="column ">
+      <div class="leaderboard-row">
+        <h2>Sensor 1 </h2>
+        <img src="foo1bar.png" alt="Sensor 1 data" style="width:328px;height:328px;">
+      </div>
+    </div>
+
+    <div class="column ">
+      <div class="leaderboard-row">
+        <h2>Sensor 2 </h2>
+        <img src="foo2bar.png" alt="Sensor 2 data" style="width:328px;height:328px;">
+      </div>
+    </div>
+
+    <div class="column ">
+      <div class="leaderboard-row">
+        <h2>Sensor 3 </h2>
+        <img src="foo3bar.png" alt="Sensor 3 data" style="width:328px;height:328px">
+      </div>
+    </div>
+
   </div>
 
-  <div class="column">
-    <h2>Sensor 2 </h2>
-    <img src="foo2bar.png" alt="Sensor 2 data" style="width:328px;height:328px;">
+
+  <div class="row">
+
+    <div class="column ">
+      <div class="leaderboard-row">
+        <h2>Sensor 4 </h2>
+        <img src="foo4bar.png" alt="Sensor 4 data" style="width:328px;height:328px">
+      </div>
+    </div>
+
+    <div class="column ">
+      <div class="leaderboard-row">
+        <h2>Sensor 5 </h2>
+        <img src="foo5bar.png" alt="Sensor 5 data" style="width:328px;height:328px">
+      </div>
+    </div>
+
   </div>
 
-  <div class="column">
-    <h2>Sensor 3 </h2>
-    <img src="foo3bar.png" alt="Sensor 3 data" style="width:328px;height:328px">
-  </div>
-
- </div>
-
- 
-<div class="row">
-  
-  <div class="column">
-    <h2>Sensor 4 </h2>
-    <img src="foo4bar.png" alt="Sensor 4 data" style="width:328px;height:328px">
-  </div>
-
-  <div class="column">
-    <h2>Sensor 5 </h2>
-    <img src="foo5bar.png" alt="Sensor 5 data" style="width:328px;height:328px">
-  </div>
-
-</div>
-
-<h2>
-<a href="display_line_graph.html"> View the line graph </a>
-</h2>
+  <h2>
+    <a href="display_line_graph.html"> View the line graph </a>
+  </h2>
 </body>
+
 </html>
